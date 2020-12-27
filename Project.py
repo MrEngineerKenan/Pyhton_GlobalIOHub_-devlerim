@@ -109,8 +109,4 @@ while kontrol:
         kontrol=True
     else:
         kontrol=False
-        print("Tekrar Bekleriz")
-    
-            
-            
-
+        print("İyi günler")
