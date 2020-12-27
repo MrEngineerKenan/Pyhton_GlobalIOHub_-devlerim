@@ -1,17 +1,25 @@
+
+#ilk başta tüm fonksiyonlarımı tek class altında toplamak istiyorum.
+
 class new_project:
+    
     dersKayit={}
     dersSayisi=0
     dersOrtalama=0
     dersNotlari={}
     count=3
+    
     def __init__(self,name="",surname=""):
         self.name=name;
         self.surname=surname
+        
     def adDegistir(self,yeniAd,yenisoyad):
         self.count-=1
         self.name=yeniAd
         self.surname=yenisoyad
+        
     def dersNotHesapla(self):
+        
         for x,y in self.dersKayit.items():
             if (y[0]*0.3+y[1]*0.5+y[2]*0.2)>=90:
                 self.dersNotlari[x]="AA ile Geçtin"
